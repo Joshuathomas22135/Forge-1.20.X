@@ -11,7 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModCreativeModTabs {
+public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
 
@@ -73,6 +73,14 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.CATMINT.get());
                         pOutput.accept(ModBlocks.GEM_POLISHING_STATION.get());
+
+                        pOutput.accept(ModBlocks.PINE_LOG.get());
+                        pOutput.accept(ModBlocks.PINE_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PINE_LOG.get());
+                        pOutput.accept(ModBlocks.STRIPPED_PINE_WOOD.get());
+
+                        pOutput.accept(ModBlocks.PINE_PLANKS.get());
+                        pOutput.accept(ModBlocks.PINE_LEAVES.get());
 
                     })
                     .build());

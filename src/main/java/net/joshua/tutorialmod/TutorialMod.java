@@ -5,7 +5,7 @@ import net.joshua.tutorialmod.block.ModBlocks;
 import net.joshua.tutorialmod.block.entity.ModBlockEntities;
 import net.joshua.tutorialmod.entity.ModEntities;
 import net.joshua.tutorialmod.entity.client.RhinoRenderer;
-import net.joshua.tutorialmod.item.ModCreativeModTabs;
+import net.joshua.tutorialmod.item.ModCreativeModeTabs;
 import net.joshua.tutorialmod.item.ModItems;
 import net.joshua.tutorialmod.loot.ModLootModifiers;
 import net.joshua.tutorialmod.recipe.ModRecipes;
@@ -39,7 +39,7 @@ public class TutorialMod {
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
