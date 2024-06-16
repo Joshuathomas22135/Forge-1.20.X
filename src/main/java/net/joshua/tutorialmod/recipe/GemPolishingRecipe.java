@@ -1,3 +1,4 @@
+
 package net.joshua.tutorialmod.recipe;
 
 import com.google.gson.JsonArray;

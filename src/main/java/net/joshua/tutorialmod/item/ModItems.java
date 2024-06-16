@@ -3,9 +3,11 @@ package net.joshua.tutorialmod.item;
 import net.joshua.tutorialmod.TutorialMod;
 import net.joshua.tutorialmod.block.ModBlocks;
 import net.joshua.tutorialmod.entity.ModEntities;
+import net.joshua.tutorialmod.entity.custom.ModBoatEntity;
 import net.joshua.tutorialmod.item.custom.FuelItem;
 import net.joshua.tutorialmod.item.custom.MetalDetectorItem;
 import net.joshua.tutorialmod.item.custom.ModArmorItem;
+import net.joshua.tutorialmod.item.custom.ModBoatItem;
 import net.joshua.tutorialmod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -75,6 +77,10 @@ public class ModItems {
     public static final RegistryObject<Item> PINE_HANGING_SIGN = ITEMS.register("pine_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PINE_HANGING_SIGN.get(), ModBlocks.PINE_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
+    public static final RegistryObject<Item> PINE_BOAT = ITEMS.register("pine_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PINE, new Item.Properties()));
+    public static final RegistryObject<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PINE, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
