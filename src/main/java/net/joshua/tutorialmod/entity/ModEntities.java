@@ -1,6 +1,7 @@
 package net.joshua.tutorialmod.entity;
 
 import net.joshua.tutorialmod.TutorialMod;
+import net.joshua.tutorialmod.entity.custom.DiceProjectileEntity;
 import net.joshua.tutorialmod.entity.custom.ModBoatEntity;
 import net.joshua.tutorialmod.entity.custom.ModChestBoatEntity;
 import net.joshua.tutorialmod.entity.custom.RhinoEntity;
@@ -28,6 +29,10 @@ public class ModEntities {
                     .sized(1.375f, 0.5625f).build("mod_chest_boat"));
 
 
+
+    public static final RegistryObject<EntityType<DiceProjectileEntity>> DICE_PROJECTILE =
+            ENTITY_TYPES.register("dice_projectile", () -> EntityType.Builder.<DiceProjectileEntity>of(DiceProjectileEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("dice_projectile"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
