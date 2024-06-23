@@ -47,7 +47,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CORN_SEEDS.get());
 
                         pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
-                        pOutput.accept(ModItems.RHINO_SPANW_EGG.get());
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
 
                         pOutput.accept(ModItems.PINE_SIGN.get());
                         pOutput.accept(ModItems.PINE_HANGING_SIGN.get());
