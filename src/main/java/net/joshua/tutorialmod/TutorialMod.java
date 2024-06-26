@@ -15,6 +15,7 @@ import net.joshua.tutorialmod.screen.ModMenuTypes;
 import net.joshua.tutorialmod.sound.ModSounds;
 import net.joshua.tutorialmod.util.ModWoodTypes;
 import net.joshua.tutorialmod.villager.ModVillagers;
+import net.joshua.tutorialmod.worldgen.tree.ModFoliagePlacers;
 import net.joshua.tutorialmod.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.Sheets;
@@ -60,6 +61,8 @@ public class TutorialMod {
 
         ModRecipes.register(modEventBus);
         ModTrunkPlacerTypes.register(modEventBus);
+
+        ModFoliagePlacers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
