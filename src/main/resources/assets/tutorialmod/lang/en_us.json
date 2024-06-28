@@ -23,8 +23,6 @@
   "item.tutorialmod.corn": "Corn",
   "item.tutorialmod.corn_seeds": "Corn Seeds",
 
-  "item.tutorialmod.rhino_spawn_egg": "Rhino Spawn Egg",
-
   "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
@@ -68,6 +66,7 @@
   "block.tutorialmod.pine_hanging_sign": "Pine Hanging Sign",
 
   "block.tutorialmod.pine_sapling": "Pine Sapling",
+  "block.tutorialmod.mod_portal": "Mod Portal",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Finds valuables underground!",
 
